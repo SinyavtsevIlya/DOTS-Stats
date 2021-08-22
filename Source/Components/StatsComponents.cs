@@ -58,7 +58,7 @@ namespace Nanory.Unity.Entities.Stats
     /// <summary>
     /// Reference to the <see cref="StatReceiverTag">Stat-Receiver</see> entity to which this effect will be applied
     /// </summary>
-    internal struct StatReceiverLink : ISharedComponentData
+    public struct StatReceiverLink : ISharedComponentData
     {
         public Entity Value;
     }

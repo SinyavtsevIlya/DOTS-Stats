@@ -21,6 +21,7 @@ namespace Nanory.Unity.Entities.Stats
         protected override void OnUpdate()
         {
             ProcessChangeStatRequests();
+            ProcessRemoveStatRequests();
         }
 
         private void ProcessChangeStatRequests()

@@ -10,12 +10,12 @@ namespace Nanory.Unity.Entities.Stats
     /// <typeparam name="TStatComponent"></typeparam>
     public abstract class StatAuthoringBase<TStatComponent> : MonoBehaviour, IStatAuthoring, IConvertGameObjectToEntity where TStatComponent : struct, IComponentData
     {
-        [SerializeField]StatOpType _opType;
+        [SerializeField] StatOpType _opType;
 
         public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {
             var statEntity = dstManager.CreateEntity();
-            AddStatComponentToEntity(statEntity, dstManager, conversionSystem);
+            dstManager.AddComponentData(statEntity, GetStat());
 
             if (_opType == StatOpType.Additive)
                 dstManager.AddComponent<AdditiveStatTag>(statEntity);
@@ -30,17 +30,19 @@ namespace Nanory.Unity.Entities.Stats
             stats.Add(new StatElement() { Value = statEntity });
 
             if (dstManager.HasComponent<StatReceiverTag>(entity))
+            {
                 dstManager.AddSharedComponentData(statEntity, new StatReceiverLink() { Value = entity });
+                dstManager.AddComponentData(entity, GetStat());
+            }
         }
 
         /// <summary>
-        /// Simply add the <see cref="TStatComponent">concreate Stat Component</see> to the entity, using dstManager.
+        /// Expects the new instance of TStatComponent created by the conversion process.
         /// </summary>
-        public abstract void AddStatComponentToEntity(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem);
+        protected abstract TStatComponent GetStat();
     }
 
     internal interface IStatAuthoring
     {
-        void AddStatComponentToEntity(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem);
     }
 }
