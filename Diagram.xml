@@ -1,0 +1,137 @@
+<mxfile host="app.diagrams.net" modified="2021-08-17T07:57:13.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.142 Safari/537.36" etag="CldkjQfgRIsPfqPySpEx" version="14.9.6" type="github">
+  <diagram id="pkGXfc4JizJs2LVcspst" name="Page-1">
+    <mxGraphModel dx="1232" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-1" value="" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeWidth=2;strokeColor=#9673a6;align=left;fillColor=#F9EBFF;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="1860" width="180" height="580" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-2" value="Stat-Context Entity&lt;br&gt;&lt;font color=&quot;#808080&quot;&gt;(e.g. Sword)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="2410" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-3" value="Stat-Entity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="2330" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-4" value="Attack&lt;font color=&quot;#808080&quot;&gt; { Value =&amp;nbsp; 35 }&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2330" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-5" value="StatReceiverLink &lt;font color=&quot;#808080&quot;&gt;{ Entity: Player}&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2370" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-6" value="Stat-Entity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="2450" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-7" value="AttackSpeed&lt;font color=&quot;#808080&quot;&gt; { Value =&amp;nbsp; -5 }&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2450" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-8" value="StatReceiverLink &lt;font color=&quot;#808080&quot;&gt;{ Entity: Player}&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2490" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-11" target="Zkc-XYTkvZFOA5AbVspa-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1780" y="2360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-11" target="Zkc-XYTkvZFOA5AbVspa-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-11" value="StatElements&amp;nbsp;&lt;br&gt;(Dynamic Buffer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="2410" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-12" value="Stat-Receiver Entity&lt;br&gt;&lt;font color=&quot;#808080&quot;&gt;(e.g. Player)&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="1930" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-13" value="Attack&lt;font color=&quot;#808080&quot;&gt; { Value =&amp;nbsp; X }&amp;nbsp;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="1930" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-14" value="AttackSpeed&lt;font color=&quot;#808080&quot;&gt;&amp;nbsp;{ Value =&amp;nbsp; Y }&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="1970" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-15" value="&lt;font color=&quot;#808080&quot;&gt;More Stats here...&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="2010" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-16" value="Stat-Entity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="1970" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-17" value="Attack&lt;font color=&quot;#808080&quot;&gt;&amp;nbsp;{ Value =&amp;nbsp; 0 }&amp;nbsp;&lt;br&gt;(Default Attack)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="1970" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-18" value="StatReceiverLink &lt;font color=&quot;#808080&quot;&gt;{ Entity: Player}&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2010" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-19" value="Stat-Entity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="2090" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-20" value="AttackSpeed&lt;font color=&quot;#808080&quot;&gt;&amp;nbsp;{ Value =&amp;nbsp; 1 }&amp;nbsp;&lt;br&gt;(Default Attack-Speed)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2090" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-21" value="StatReceiverLink &lt;font color=&quot;#808080&quot;&gt;{ Entity: Player}&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2130" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-24" target="Zkc-XYTkvZFOA5AbVspa-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1780" y="2000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-24" target="Zkc-XYTkvZFOA5AbVspa-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-24" value="StatElements&amp;nbsp;&lt;br&gt;(Dynamic Buffer)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="2050" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-25" value="StatsChangedEvent" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="2290" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-26" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=1;shadow=0;dashed=0;shape=mxgraph.ios7.icons.flash;strokeColor=#C95D5D;" vertex="1" parent="1">
+          <mxGeometry x="1558" y="2300" width="12" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-35" target="Zkc-XYTkvZFOA5AbVspa-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-28" value="CalculateStatSystem&amp;lt;&lt;b&gt;Attack&lt;/b&gt;&amp;gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeColor=#b85450;strokeWidth=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1570" y="1600" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-32" target="Zkc-XYTkvZFOA5AbVspa-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1320" y="2350" />
+              <mxPoint x="1320" y="2310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-32" target="Zkc-XYTkvZFOA5AbVspa-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-31" value="Adds" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Zkc-XYTkvZFOA5AbVspa-30">
+          <mxGeometry x="0.2951" relative="1" as="geometry">
+            <mxPoint x="-46" y="-40" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-32" value="(Extension)&lt;br&gt;SetStasChanged" style="rhombus;whiteSpace=wrap;html=1;strokeColor=#b85450;strokeWidth=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="2310" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-33" value="&lt;span style=&quot;text-align: left&quot;&gt;&lt;b&gt;Query&amp;nbsp;&lt;/b&gt;&lt;br&gt;&lt;b&gt;{&lt;/b&gt; &lt;font color=&quot;#006600&quot;&gt;Attack&lt;/font&gt;,&lt;br&gt;&lt;font color=&quot;#990000&quot;&gt;StatsChangedEvent&lt;/font&gt;, &lt;font color=&quot;#ff9933&quot;&gt;StatsRecieverLink &lt;/font&gt;&lt;b&gt;}&lt;/b&gt;&lt;br&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="1580" y="1870" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-35" target="Zkc-XYTkvZFOA5AbVspa-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-35" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=1;fillColor=none;arcSize=7;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="1740" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=classic;endFill=1;" edge="1" parent="1" source="Zkc-XYTkvZFOA5AbVspa-28" target="Zkc-XYTkvZFOA5AbVspa-35">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1670" y="1680" as="sourcePoint" />
+            <mxPoint x="1670" y="1860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zkc-XYTkvZFOA5AbVspa-37" value="Recalculates and summ/multipies&lt;br&gt;&amp;nbsp;when changes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Zkc-XYTkvZFOA5AbVspa-36">
+          <mxGeometry x="-0.0901" y="2" relative="1" as="geometry">
+            <mxPoint y="63" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
