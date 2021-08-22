@@ -1,0 +1,21 @@
+{
+  "name": "com.nanory.unity.entities.stats",
+  "displayName": "DOTS-Stats",
+  "version": "1.0",
+  "unity": "2019.4",
+  "unityRelease": "18f1",
+  "dependencies": {
+    "com.unity.collections": "0.15.0-preview.21",
+  },
+  "description": "DOTS-Stats is a high performance and scalable Stats-System.",
+  "keywords": [
+    "entities",
+    "dots",
+	"stats",
+    "unity"
+  ],
+  "repository": {
+    "url": "https://github.com/SinyavtsevIlya/DOTS-Stats.git",
+    "type": "git"
+  }
+}
