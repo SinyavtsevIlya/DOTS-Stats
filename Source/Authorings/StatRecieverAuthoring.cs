@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Nanory.Unity.Entities.Stats
 {
     /// <summary>
-    /// Authoring for <see cref="StatRecieverTag">Stat Reciever Tag</see>
+    /// Authoring for <see cref="StatReceiverTag">Stat Reciever Tag</see>
     /// </summary>
     [ExecuteAlways]
     [DisallowMultipleComponent]
@@ -26,7 +26,7 @@ namespace Nanory.Unity.Entities.Stats
 #endif
         public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
         {
-            dstManager.AddComponent<StatRecieverTag>(entity);
+            dstManager.AddComponent<StatReceiverTag>(entity);
             dstManager.AddBuffer<StatRecievedElementEvent>(entity);
 
             foreach (var statAuthoring in GetComponents<IStatAuthoring>())

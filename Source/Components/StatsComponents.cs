@@ -4,26 +4,43 @@ namespace Nanory.Unity.Entities.Stats
 {
     /// <summary>
     /// The Stat-Entity marked with this tag applies the effect 
-    /// to the <see cref="StatRecieverTag">Stat-Reciver</see> using the addition/subtraction operation
+    /// to the <see cref="StatReceiverTag">Stat-Receiver</see> using the addition/subtraction operation
     /// </summary>
     public struct AdditiveStatTag : IComponentData { }
     /// <summary>
     /// The Stat-Entity marked with this tag applies the effect 
-    /// to the <see cref="StatRecieverTag">Stat-Reciver</see> using the multiply/divide operation
+    /// to the <see cref="StatReceiverTag">Stat-Receiver</see> using the multiply/divide operation
     /// </summary>
     public struct MultiplyStatTag : IComponentData { }
 
     /// <summary>
-    /// Event of applying Stat-Entity (to the <see cref="StatRecieverTag">Stat-Reciver</see>) or changing it's value
+    /// Request of applying Stat-Entity (to the <see cref="StatReceiverTag">Stat-Receiver</see>) or changing it's value
+    /// </summary>
+    public struct StatsChangedRequest : IComponentData
+    {
+        public Entity StatContext;
+        public Entity StatReceiver;
+    }
+
+    /// <summary>
+    /// Request of removing Stat-Entity (from the <see cref="StatReceiverTag">Stat-Receiver</see>)
+    /// </summary>
+    public struct StatsRemovedRequest : IComponentData
+    {
+        public Entity StatContext;
+    }
+
+    /// <summary>
+    /// Event of applying Stat-Entity (to the <see cref="StatReceiverTag">Stat-Receiver</see>) or changing it's value
     /// </summary>
     public struct StatsChangedEvent : IComponentData { }
     /// <summary>
-    /// Event of removing Stat-Entity (from the <see cref="StatRecieverTag">Stat-Reciver</see>)
+    /// Event of removing Stat-Entity (from the <see cref="StatReceiverTag">Stat-Receiver</see>)
     /// </summary>
     public struct StatsRemovedEvent : IComponentData { }
 
     /// <summary>
-    /// An event that any of the Stat-Entity of <see cref="StatRecieverTag">Stat-Reciver</see> has changed. Always placed on the <see cref="StatRecieverTag">Stat-Reciver</see> entity
+    /// An event that any of the Stat-Entity of <see cref="StatReceiverTag">Stat-Receiver</see> has changed. Always placed on the <see cref="StatReceiverTag">Stat-Receiver</see> entity
     /// </summary>
     public struct StatRecievedElementEvent : IBufferElementData 
     {
@@ -39,7 +56,7 @@ namespace Nanory.Unity.Entities.Stats
     }
 
     /// <summary>
-    /// Reference to the <see cref="StatRecieverTag">Stat-Reciver</see> entity to which this effect will be applied
+    /// Reference to the <see cref="StatReceiverTag">Stat-Receiver</see> entity to which this effect will be applied
     /// </summary>
     internal struct StatReceiverLink : ISharedComponentData
     {
@@ -51,7 +68,7 @@ namespace Nanory.Unity.Entities.Stats
     /// may accumulate stats values from it's children Stat-Entities. 
     /// As soon as the value of the Stat-Entity changes, the value of the Stat-Receiver also changes.
     /// </summary>
-    public struct StatRecieverTag : IComponentData { }
+    public struct StatReceiverTag : IComponentData { }
 
     /// <summary>
     /// Stat-Entity - is the entity which holds one or several Stat-Components (e.g. Strength, Max-Health, etc.) 

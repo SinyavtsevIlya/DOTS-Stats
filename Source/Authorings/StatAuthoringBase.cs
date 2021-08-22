@@ -29,7 +29,7 @@ namespace Nanory.Unity.Entities.Stats
 
             stats.Add(new StatElement() { Value = statEntity });
 
-            if (dstManager.HasComponent<StatRecieverTag>(entity))
+            if (dstManager.HasComponent<StatReceiverTag>(entity))
                 dstManager.AddSharedComponentData(statEntity, new StatReceiverLink() { Value = entity });
         }
 
