@@ -14,8 +14,31 @@ DOTS-Stats is a high performance and scalable Stats-System.
 
 ## HowTo
 
-// In Progress
+### Installation
+Requirement: Unity >= 2019.4.18 and entities package >= 0.14.0-preview.19
 
+### Usage
+
+#### Create a new Stat component you need
+
+``` c#
+public struct Attack : IComponentData
+{
+    // The only constraint is you must have a float field. 
+    public float Value; 
+}
+```
+
+#### Create a new Authoring for this Stat
+
+``` c#
+public class AttackAuthoring : StatAuthoringBase<Attack>
+{
+    [SerializeField] float _value;
+    // Simply return a new instance of "Attack" and set it's value from the serialized field. 
+    protected override Attack GetStat() => new Attack() { Value = _value };
+}
+```
 
 ## How it works under the hood
 
