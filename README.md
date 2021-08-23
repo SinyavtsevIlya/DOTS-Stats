@@ -15,10 +15,13 @@ DOTS-Stats is a high performance and scalable Stats-System.
 
 ## HowTo
 
-### Installation
+### Requirements
+
 `Min. Requirements:` Unity >= 2019.4.18 and entities package >= 0.11.2-preview.1
 
 `Tested on:` Unity 2020.2.3 and entities package 0.17.0-preview.42
+
+### Installation
 
 You can install the repository using `UPM`:
 Just add this line in Packages/manifest.json:
