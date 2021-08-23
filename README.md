@@ -54,7 +54,7 @@ public class AttackAuthoring : StatAuthoringBase<Attack>
 ```
 You'll get this:
 
-![Authoring](https://i.imgur.com/pKs8kOl.png)
+![Authoring](Docs/AuthoringPreview.png)
 
 #### 3) Create two gameobject in your scene: "Sword" and "Player". Add an `AttackAuthoring` on both of them.
 And also add a `StatReceiverTagAuthoring` on the Player gameobject, to make him a "Stat-Reciever". (means that he able to accumulate stats from other contexts, e.g. items, buffs etc.)
@@ -96,4 +96,4 @@ entityCommandBuffer.SetStatsRemoved(contextEntity);
 
 ## How it works under the hood
 
-![Self-editing Diagram](Diagram.svg)
+![Self-editing Diagram](Docs/Diagram.svg)
